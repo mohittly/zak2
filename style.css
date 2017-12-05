@@ -1,0 +1,64 @@
+body
+{
+	overflow:hidden;
+	background-color: #262626;
+}
+
+
+.main2
+{
+	width: 70px;
+	height: 70px;
+	background:#e8b384;
+	border-radius: 50%;
+	opacity: 0.5;
+}
+
+.main1
+{
+	width: 70px;
+	height: 70px;
+	background:#d35400;
+	border-radius: 50%;
+}
+
+
+.ripple
+{
+
+	width: 70px;
+	height: 70px;
+	background:#ff6d4a;
+	border-radius: 50%;
+	color:#fff;
+	font-size: 15px;
+	text-align: center;
+	line-height: 70px;
+	font-family: verdana;
+	text-transform: uppercase;
+	animation: anim 3s linear infinite;
+	cursor:pointer;
+
+}
+
+
+
+@keyframes anim
+{
+	0%
+	{
+		box-shadow: 0 0 0 0 rgba(255,109,74,.7), 0 0 0 0 rgba(255,109,74,.7);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 50px rgba(255,109,74,0), 0 0 0 0 rgba(255,109,74,.7);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 50px rgba(255,109,74,0),0 0 0 30px rgba(255,109,74,.7);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 0 rgba(255,109,74,0), 0 0 0 30px rgba(255,109,74,.7);
+	}
+}
